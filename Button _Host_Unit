@@ -1,0 +1,62 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+
+namespace PL_1
+{
+    /// <summary>
+    /// Logique d'interaction pour the_host.xaml
+    /// </summary>
+    public partial class the_host : Window
+    {
+        public the_host()
+        {
+            InitializeComponent();
+        }
+        private void ADD_HOST_Click(object sender, RoutedEventArgs e)
+        {
+            Window Add_Host = new add_hosting_unit();
+            Add_Host.Show();
+
+        }
+
+        private void UPDATE_HOST_Click(object sender, RoutedEventArgs e)
+        {
+                Window Update_Host = new update_hosting_unit();
+
+        }
+
+        private void DELETE_HOST_UNIT_Click(object sender, RoutedEventArgs e)
+        {
+            Window Delete_Host_Unit = new delete_hosting_unit();
+            Delete_Host_Unit.Show();
+
+
+        }
+
+
+        private void SEND_MAIL_Click(object sender, RoutedEventArgs e)
+        {
+            Show();
+        }
+
+
+
+
+        //private void SEND_MAIL_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Window Send_Mail = new sen();
+        //    Send_Mail.Show();
+        //}
+    }
+}
